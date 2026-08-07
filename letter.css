@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    font-family:'Poppins',sans-serif;
+    background:#000;
+    color:white;
+}
+
+.background{
+position:fixed;
+inset:0;
+background:url("images/10-final.jpg") center/cover;
+filter:blur(12px) brightness(.35);
+transform:scale(1.1);
+}
+
+.envelope{
+
+position:relative;
+z-index:10;
+
+font-size:120px;
+
+cursor:pointer;
+
+text-align:center;
+
+transition:.5s;
+
+animation:float 3s ease-in-out infinite;
+
+}
+
+.envelope:hover{
+
+transform:scale(1.08);
+
+}
+
+.envelope p{
+
+font-size:22px;
+
+margin-top:15px;
+
+}
+
+@keyframes float{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+}
+
+
+.letter{
+    position:relative;
+    z-index:20;
+    display:flex;
+
+    width:85%;
+    max-width:1000px;
+
+    margin:60px auto;
+
+    position:relative;
+    z-index:20;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    gap:40px;
+
+    align-items:flex-start;
+
+.letter h1{
+
+font-family:'Great Vibes',cursive;
+font-size:65px;
+margin-bottom:25px;
+text-align:center;
+
+}
+
+.photo{
+
+width:230px;
+height:320px;
+
+border-radius:20px;
+
+object-fit:cover;
+
+box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+#typing{
+
+font-size:22px;
+
+line-height:42px;
+
+white-space:pre-wrap;
+
+}
+
+#nextBtn{
+
+display:none;
+
+margin:40px auto 0;
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:35px;
+
+background:#ff4f8b;
+
+color:white;
+
+font-size:18px;
+
+cursor:pointer;
+
+}
+.photo{
+    width:230px;
+    height:320px;
+
+    object-fit:cover;
+    border-radius:20px;
+
+    position:sticky;
+    top:100px;
+
+    align-self:flex-start;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}}
